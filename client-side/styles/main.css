@@ -1,0 +1,183 @@
+body {
+    font-family: sans-serif;
+    padding: 0 150px;
+    background-color: #f5f5f5;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item {
+    width: 230px;
+    height: 350px;
+    padding-top: 10px;
+    margin: 15px 12px !important;
+    overflow: hidden;
+    display: flex !important;
+    border-top: 1px solid rgb(228, 228, 228);
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.25s all;
+    color: rgb(105, 105, 105);
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.item:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    margin-bottom: 54px;
+}
+.links {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(150, 105, 105);
+}
+.info {
+    text-align: center;
+}
+.info span {
+    text-align: left;
+}
+.info button {
+    margin-left: auto;
+}
+
+.productTitle {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+.productPrice {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+img {
+    align-self: center;
+    height: 100px;
+    width: auto;
+    max-width: 235px;
+    overflow: hidden;
+}
+.material-button-raised {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 2px;
+    padding: 0 16px;
+    min-width: 64px;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    color: #62abe7;
+/*    border: 1px solid #62abe7;*/
+    /*background-color: #62abe7;*/
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    ffont-family: 'Roboto', 'Segoe UI', BlinkMacSystemFont, system-ui, -apple-system;
+
+    font-weight: 500;
+    line-height: 36px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    /*transition: box-shadow 0.2s;*/
+}
+
+.material-button-raised:hover,
+.material-button-raised:focus {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.material-button-raised:active {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+        0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.material-button-raised:disabled {
+    color: rgba(0, 0, 0, 0.38);
+    background-color: rgba(0, 0, 0, 0.12);
+    box-shadow: none;
+    cursor: initial;
+}
+
+.material-button-raised::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.material-button-raised:hover::before {
+    opacity: 0.12;
+}
+
+.material-button-raised:focus::before {
+    opacity: 0.2;
+}
+
+.material-button-raised:active::before {
+    opacity: 0.32;
+}
+
+.material-button-raised:disabled::before {
+    opacity: 0;
+}
+
+.material-button-raised::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 18px;
+    border-radius: 50%;
+    padding: 50%;
+    width: 32px;
+    height: 32px;
+    background-color: currentColor;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 1s, transform 0.5s;
+}
+
+.material-button-raised:active::after {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0s;
+}
+
+.material-button-raised:disabled::after {
+    opacity: 0;
+}
+.search {
+    border: 0px solid white;
+    margin-top: 10px;
+}
+.filter-btn {
+    cursor: pointer;
+    margin-left: 20px;
+}
+input[type='number'] {
+    border: 0px;
+    height: 20px;
+    width: 50px;
+    padding: 2px;
+    outline-offset: 0;
+}
+label {
+    color: rgb(80, 80, 80);
+}

@@ -1,3 +1,6 @@
+# React Product Search App
+![alt text](https://github.com/ShenikaFernando/React_Product_search/blob/master/pic.png)
+
 you'll need:
 
 * Node : [Nodejs Website](https://nodejs.org/en/) Ideally v8.4.0 or above
